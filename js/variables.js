@@ -1,5 +1,5 @@
 
-const productos = ['Martillo', 'Pinza', 'Clavos', 'Lijas', 'Tornillos', 'Pinceles', 'Cables', 'Balde de pintura', 'Picaportes', 'Focos']
+const productos = ['Martillo', 'Pinza', 'Clavos', 'Lijas', 'Tornillos', 'Pinceles', 'Cables', 'Balde de pintura', 'Alargue', 'Focos']
 
 const carrito = []
 
