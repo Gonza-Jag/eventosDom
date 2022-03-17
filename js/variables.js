@@ -5,3 +5,5 @@ const carrito = []
 
 const listadoHerramientas = document.getElementById("listadoHerramientas")
 const listadoCarrito = document.getElementById("listadoCarrito")
+
+const btnCarrito = document.querySelector("a")

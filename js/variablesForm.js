@@ -5,3 +5,4 @@ const inputEmail = document.querySelector("#inputEmail")
 const btnSubmit = document.querySelector("#submit")
 
 let datosDeInput = ""
+
