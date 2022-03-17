@@ -15,9 +15,4 @@ btnSubmit.addEventListener("mousemove", ()=> {
 
 
 
-
-
-
-
-
 focoEnInput()
