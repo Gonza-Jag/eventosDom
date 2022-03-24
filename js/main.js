@@ -21,3 +21,11 @@ const agregarAlCarrito = (prod)=>{
     }
 }
  
+let nombre = prompt("Ingrese su nombre")  
+if(nombre == ""){
+    alert("No ingresaste un nombre")
+} 
+else {
+    alert("Bienvenidx "  + nombre)
+}
+    
