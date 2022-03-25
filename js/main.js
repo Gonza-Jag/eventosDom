@@ -22,7 +22,7 @@ const agregarAlCarrito = (prod)=>{
 }
  
 let nombre = prompt("Ingrese su nombre")  
-if(nombre == ""){
+if((nombre == "") || (nombre == null)){
     alert("No ingresaste un nombre")
 } 
 else {
