@@ -1,8 +1,9 @@
 
 const guardarDatos = ()=> {
-    const datosForm = {nomb: "" , dni: 0}
-    datosForm.nomb = nomb.value
-    datosForm.dni = dni.value
+    const datosForm = {inputNombre: "" , inputTelefono: 0, inputEmail: ""}
+    datosForm.inputNombre = inputNombre.value
+    datosForm.inputTelefono = inputTelefono.value
+    datosForm.inputEmail = inputEmail.value
     localStorage.setItem("datosDelForm", JSON.stringify(datosForm))
     console.info("Se ha almacenado el array en Local Storage.")
 
@@ -13,8 +14,9 @@ const guardarDatos = ()=> {
    const recuperoDatos = ()=> {
        if (localStorage.getItem("datosDelForm") != null){
         datosdelForm = JSON.parse(localStorage.getItem("datosDelForm"))
-        nomb.value = datosdelForm.nomb
-        dni.value = datosdelForm.dni
+        inputNombre.value = datosdelForm.inputNombre
+        inputTelefono.value = datosdelForm.inputTelefono
+        inputEmail.value = datosdelForm.inputEmail
        }
    }
 
@@ -32,7 +34,7 @@ const limpiarDatos = ()=> {
 
 
 
-   guardar.addEventListener("click", guardarDatos)
+btnSubmit.addEventListener("click", guardarDatos)
 
    recuperoDatos()
 

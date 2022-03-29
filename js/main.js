@@ -21,11 +21,12 @@ const agregarAlCarrito = (prod)=>{
     }
 }
  
-let nombre = prompt("Ingrese su nombre")  
-if((nombre == "") || (nombre == null)){
-    alert("No ingresaste un nombre")
-} 
-else {
-    alert("Bienvenidx "  + nombre)
-}
-    
+
+    function alerta() {
+        Swal.fire({title: "Saludos", text: "Bienvenidos a 'El Gringo'", icon: "success", confirmButtonText: "Puede seguir con su compra"})
+
+    }
+
+
+
+    alerta()
