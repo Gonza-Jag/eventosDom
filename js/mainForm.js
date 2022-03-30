@@ -25,7 +25,7 @@ btnSubmit.addEventListener("click", ()=> {
     })
 })
 
-btnSubmit()
+
 
 focoEnInput()
 
