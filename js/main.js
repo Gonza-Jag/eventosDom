@@ -9,7 +9,6 @@ const cargarProductos = ()=>{
     }
 
 }
-cargarProductos()
 
 const agregarAlCarrito = (prod)=>{
     if (prod.trim() > "") {
@@ -28,5 +27,5 @@ const agregarAlCarrito = (prod)=>{
     }
 
 
-
+    cargarProductos()
     alerta()

@@ -31,9 +31,6 @@ const limpiarDatos = ()=> {
 
 
 
-
-
-
 btnSubmit.addEventListener("click", guardarDatos)
 
    recuperoDatos()

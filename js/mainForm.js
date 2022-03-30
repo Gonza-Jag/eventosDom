@@ -13,6 +13,20 @@ btnSubmit.addEventListener("mousemove", ()=> {
     btnSubmit.title = "Complete los campos antes de Enviar el formulario."
 })
 
+btnSubmit.addEventListener("click", ()=> {
+    
+    Swal.fire({
+        position: 'bottom',
+  icon: 'success',
+  title: 'Su pedido se realizo con éxito',
+  showConfirmButton: false,
+  timer: 1500
 
+    })
+})
+
+btnSubmit()
 
 focoEnInput()
+
+
