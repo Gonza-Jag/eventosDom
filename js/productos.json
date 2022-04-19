@@ -1,0 +1,50 @@
+[{
+    "producto":"Martillo",
+    "stock": 22
+},
+
+{
+    "producto":"Pinza",
+    "stock": 16
+},
+
+{
+    "producto":"Clavos",
+    "stock":50
+},
+
+{
+    "producto": "Lijas",
+    "stock": 21
+}, 
+
+{
+    "producto":"Tornillos",
+    "stock": 50
+
+},
+
+{
+    "producto":"Pinceles",
+    "stock": 18
+},
+
+{
+    "producto": "Cables",
+    "stock": 30
+},
+
+{
+    "producto":"Balde de pintura",
+    "stock": 10
+},
+
+{
+    "producto":"Alargue",
+    "stock": 8
+},
+
+{
+    "producto":"Focos",
+    "stock": 12
+}]

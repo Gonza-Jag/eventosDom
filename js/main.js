@@ -1,25 +1,28 @@
-
-const cargarProductos = ()=>{
-    for (herram of productos) {
-        const liProducto = document.createElement("li")
-        liProducto.className = "collection-item"
-        liProducto.innerText = herram
-        liProducto.setAttribute("onclick", `agregarAlCarrito('${herram}')`)
-        listadoHerramientas.append(liProducto)
-    }
-
+const cargoTabla = (arr)=> {
+    let detalleTabla = ""
+    arr.forEach(productos => {
+        detalleTabla += `<tr>
+        <td>${productos.producto}</td>
+        <td>${productos.stock}</td>
+     </tr>`
+    })
+    tbody.innerHTML = detalleTabla
+    
 }
+const obtenerDatos = ()=>{
+    fetch(URL)
+              .then((response)=>  response.json())
+              .then((data)=>{arrayRanking = data})
+              .catch(error =>  arrayRanking = [{producto: "error :(", stock: "",}])
+                 
+                 .finally(()=> cargoTabla(arrayRanking))
+                  
+              }
+                
 
-const agregarAlCarrito = (prod)=>{
-    if (prod.trim() > "") {
 
-        const liCarrito = document.createElement("li")
-        liCarrito.className = "collection-item italica-carrito"
-        liCarrito.innerText = prod
-        listadoCarrito.append(liCarrito)
-    }
-}
- 
+document.addEventListener("DOMcontentLoaded", obtenerDatos())
+
 
     function alerta() {
         Swal.fire({title: "Saludos", text: "Bienvenidos a 'El Gringo'", icon: "success", confirmButtonText: "Puede seguir con su compra"})
