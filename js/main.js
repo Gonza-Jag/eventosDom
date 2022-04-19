@@ -18,17 +18,28 @@ const obtenerDatos = ()=>{
                  .finally(()=> cargoTabla(arrayRanking))
                   
               }
+              
                 
 
 
+
+
+
+
+              
+
 document.addEventListener("DOMcontentLoaded", obtenerDatos())
 
+Swal.fire({
+    position: 'bottom',
+icon: 'success',
+title: 'Bienvenidos a El Gringo',
+showConfirmButton: false,
+timer: 1500
 
-    function alerta() {
-        Swal.fire({title: "Saludos", text: "Bienvenidos a 'El Gringo'", icon: "success", confirmButtonText: "Puede seguir con su compra"})
-
-    }
+})
 
 
-    cargarProductos()
-    alerta()
+
+ 
+    
