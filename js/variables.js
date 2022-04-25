@@ -1,5 +1,4 @@
 
-const productos = ['Martillo', 'Pinza', 'Clavos', 'Lijas', 'Tornillos', 'Pinceles', 'Cables', 'Balde de pintura', 'Alargue', 'Focos']
 
 const carrito = []
 
@@ -8,6 +7,7 @@ const listadoCarrito = document.getElementById("listadoCarrito")
 const inputFiltrar = document.querySelector("#filtrar")
 
 const tbody = document.querySelector("tbody")
+const productos = document.getElementById("items")
 
 const btnCarrito = document.querySelector("a")
 
